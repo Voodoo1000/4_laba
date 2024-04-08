@@ -82,7 +82,7 @@
             Controls.Add(txtInfo);
             Controls.Add(btnRefill);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Напитки";
             ResumeLayout(false);
         }
 
