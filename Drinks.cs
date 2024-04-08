@@ -12,7 +12,8 @@ namespace _4_laba
 
         public virtual String GetInfo()
         {
-            return "Я напиток";
+            var str = String.Format("\nОбъем: {0}", this.volume);
+            return str;
         }
     }
 
@@ -24,7 +25,9 @@ namespace _4_laba
 
         public override string GetInfo()
         {
-            return "Я сок";
+            var str = "Я сок";
+            str += base.GetInfo();
+            return str;
         }
     }
 
@@ -35,7 +38,9 @@ namespace _4_laba
         public int countBubbles = 0; // Количество пузырьков
         public override string GetInfo()
         {
-            return "Я газировка";
+            var str = "Я газировка";
+            str += base.GetInfo();
+            return str;
         }
     }
     
@@ -46,7 +51,9 @@ namespace _4_laba
         public int strength = 0; //Крепкость алкоголя
         public override string GetInfo()
         {
-            return "Я алкоголь";
+            var str = "Я алкоголь";
+            str += base.GetInfo();
+            return str;
         }
     }
 }
