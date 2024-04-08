@@ -21,22 +21,13 @@ namespace _4_laba
                 switch (rnd.Next() % 3)
                 {
                     case 0:
-                        this.drinksList.Add(new Juice
-                        {
-                            volume = rnd.Next() % 101
-                        });
+                        this.drinksList.Add(Juice.Generate());
                         break;
                     case 1:
-                        this.drinksList.Add(new Soda
-                        {
-                            volume = rnd.Next() % 101
-                        });
+                        this.drinksList.Add(Soda.Generate());
                         break;
                     case 2:
-                        this.drinksList.Add(new Alcohol
-                        {
-                            volume = rnd.Next() % 101
-                        });
+                        this.drinksList.Add(Alcohol.Generate());
                         break;
                 }
             }
